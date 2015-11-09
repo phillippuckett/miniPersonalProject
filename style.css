@@ -1,0 +1,79 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+	background-color: whitesmoke;
+	overflow-y: auto;
+}
+
+
+
+/*PROPERTY OUTLINES*/
+*{
+    outline: 1px solid deeppink;	
+}
+
+
+
+/*HEADER*/
+header {
+	color: seagreen;
+	font-size: 40px;
+  	text-align: center;
+	padding: 2.5%;	
+}
+header p {
+	color: sea darkseagreen;
+	font-size: 20px;
+  	text-align: center;
+}
+
+
+
+
+/*MISSION*/
+.mission-header {
+	color: sea darkseagreen;
+	font-size: 20px;
+  	text-align: center;
+	padding: 2.5%;
+}
+.mission-statement {
+	color: sea darkseagreen;
+	font-size: 20px;
+  	text-align: center;
+	padding: 2.5%;
+}
+
+
+
+
+/*BASIC NUTRITION*/
+.basic-nutrition {
+	background-color: whitesmoke;
+	color: seagreen;
+    outline: 1px solid seagreen;	
+	font-size: 30px;
+	-webkit-box-sizing: 100px 1000px;
+  	text-align: center;
+	margin: 5% 0 5% 20%;
+	padding: 1%;	
+	float: left;
+}
+
+
+
+
+/*NUTRITION FACTS*/
+.nutrition-facts {
+	background-color: whitesmoke;
+	color: seagreen;
+    outline: 1px solid seagreen;
+	
+	font-size: 30px;
+  	text-align: center;
+	margin: 5% 20% 5% 0;
+	padding: 1%;	
+	float: right;
+}

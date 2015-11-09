@@ -4,60 +4,84 @@ html,body {
     width: 100%;
     margin: 0%;
     padding: 0;
-	background-color: whitesmoke;
+	background-color: darkgreen;
 	overflow-y: auto;
 }
-
-
 
 /*PROPERTY OUTLINES*/
 *{
     outline: 1px solid deeppink;	
 }
 
-
+/*MENU*/
+.menu {
+	color: darkgreen;
+	font-size: 12px;
+	Height: 12px;
+}
 
 /*HEADER*/
 header {
-	color: seagreen;
+	color: whitesmoke;
 	font-size: 25px;
   	text-align: center;
 	padding: 2.5%;	
 }
 
-
-
 /*MISSION*/
 .mission {
-	color: sea darkseagreen;
+	color: lightgreen;
 	font-size: 20px;
   	text-align: center;
 	padding: 2.5%;
 }
 
-
-
-/*BASIC NUTRITION*/
-.basic-nutrition {
-	background-color: whitesmoke;
-	color: seagreen;
-    outline: 1px solid seagreen;	
+/*NUTRITION BASICS*/
+.basics {
+	background-color: darkgreen;
+	color: lightgreen;
+    outline: 1px solid green;	
 	font-size: 30px;
-	-webkit-box-sizing: 100px 1000px;
   	text-align: center;
 	margin: 5% 0 5% 21.5%;
 	padding: 1%;	
 	float: left;
 }
 
+.nutritionSub-Categories {
+	color: lightgreen;	
+  	text-align: center;
+	padding: 1%;
+	margin: 0 10%;
+		
+}
+.macro {
+	background-color: darkgreen;
+	color: lightgreen;
+    outline: 1px solid green;	
+	font-size: 30px;
+  	text-align: center;
+	margin: 5% 0 5% 21.5%;
+	padding: 1%;	
+	float: left;
+}
 
-
+.micro {
+	background-color: darkgreen;
+	color: lightgreen;
+    outline: 1px solid green;	
+	font-size: 30px;
+  	text-align: center;
+	margin: 5% 21.5% 5% 0;
+	padding: 1%;	
+	float: right;
+}
 
 /*NUTRITION FACTS*/
-.nutrition-facts {
-	background-color: whitesmoke;
-	color: seagreen;
-    outline: 1px solid seagreen;
+.facts {
+	background-color: darkgreen;
+	color: lightgreen;
+    outline: 1px solid green;
 	
 	font-size: 30px;
   	text-align: center;

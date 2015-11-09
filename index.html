@@ -8,40 +8,36 @@
 	<title>UnderstandingTheFoodsYouEat</title>
 </head>
 
-<body ng-controller="mainCtrl" ng-repeat="">
-	<div class="main-container" ng-controller="mainCtrl">
-		<div class="menu">
+<body>
+	<div class="main-container">
+		<nav class="menu">
 			<ul>
 				<li>
-					<home href="/#/">Home</home>
-					<brker href="|"> | <brker>
-					<search href="search">Search</search>
+					<a href="/#/">Main</a>
+					<brker href="|">|<brker>
+					<a href="/#/">Search</a>
 				</li>
 			</ul>
+		</nav>
+
+		<header>Understanding the Foods We Eat</header>
+		
+		<div class="mission">
+			In hopes of enlightening the average jae who hasn't spent four years studying health sciences and nutrition, at a college
+			or university. This serves to break down otherwise difficult concepts, allowing for a better understanding of nutrition
 		</div>
-				<header>Understanding the Foods We Eat</header>
+		
+		<div ui-view></div>
+	</div>	
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+		<script src="/myApp.js"></script>
+		<script src="/jsMain/mainCtrl.js"></script>
+		<script src="/jsMain/mainService.js"></script>
+		<script src="/jsBasics/basicsCtrl.js"></script>
+		<script src="/jsFacts/factsCtrl.js"></script>
 
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-				<script src='filesImages/http-::p1.pichost.me:i:37:1606325.jpg?dl=1.jpg'></script>
-				<script src="myApp.js"></script>
-				<script src="mainCtrl.js"></script>
-				<script src="mainService.js"></script>
-				<script src="dirDisplay"></script>
-
-				<div class="mission">
-					In hopes of enlightening the average jae who hasn't spent four years studying health sciences and nutrition, at a college or university. 
-					This serves to break down otherwise difficult concepts, allowing for a better understanding of nutrition</div>
-
-				<div class="basic-nutrition">Basic Nutrition
-					<!--Some Routes to link the following information to some other windows in 'Angular'-->
-				</div>
-
-				<div class="nutrition-facts"> Nutrition Facts
-					<!--Plug in a 'Nutrition Database' API and a template for the information to go here-->
-				</div>
-
-		</div>
 </body>
 
 </html>

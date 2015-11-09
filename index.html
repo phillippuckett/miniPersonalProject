@@ -3,46 +3,45 @@
 
 <head>
 	<link rel="stylesheet" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>UnderstandingTheFoodsYouEat</title>
 </head>
 
 <body ng-controller="mainCtrl" ng-repeat="">
-
-	<header>Understanding the Foods You Eat</header>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-	<script src="myApp.js"></script>
-	<script src="mainCtrl.js"></script>
-	<script src="mainService.js"></script>
-	<script src="dirDisplay"></script>
-	
-			<div class="mission-header">The Goals of This Informational</div>
-		<div class ="mission-statement"> 
-			<p>1) A comprehensible breakdown of nutrition</p>
-			<p>2) An API containing nutritional data on as many foods as the FDA will provide me with</p>
+	<div class="main-container" ng-controller="mainCtrl">
+		<div class="menu">
+			<ul>
+				<li>
+					<home href="/#/">Home</home>
+					<brker href="|"> | <brker>
+					<search href="search">Search</search>
+				</li>
+			</ul>
 		</div>
+				<header>Understanding the Foods We Eat</header>
 
-	<div class="basic-nutrition">Basic Nutrition
-		<!--Some Routes to link the following information to some other windows/pages-->
-		<!--<select name="(Large Quantities)">
-			<option value="Protein">Protein</option>
-			<option value="Carbohydrates">Carbohydrates</option>
-			<option value="Lipids">Lipids</option>
-		</select>
-		<select name="(Small Quantities)">
-			<option value="Vitamins">Vitamins</option>
-			<option value="Minerals">Minerals</option>
-			<option value="Dihydrogen Oxide">Di-Hydrogen Oxide</option>
-		</select>-->
-	</div>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+				<script src='filesImages/http-::p1.pichost.me:i:37:1606325.jpg?dl=1.jpg'></script>
+				<script src="myApp.js"></script>
+				<script src="mainCtrl.js"></script>
+				<script src="mainService.js"></script>
+				<script src="dirDisplay"></script>
 
-	<div class="nutrition-facts"> Nutrition Facts
-		<!--An API and a template for the information to go here-->
-	</div>
+				<div class="mission">
+					In hopes of enlightening the average jae who hasn't spent four years studying health sciences and nutrition, at a college or university. 
+					This serves to break down otherwise difficult concepts, allowing for a better understanding of nutrition</div>
 
+				<div class="basic-nutrition">Basic Nutrition
+					<!--Some Routes to link the following information to some other windows in 'Angular'-->
+				</div>
 
+				<div class="nutrition-facts"> Nutrition Facts
+					<!--Plug in a 'Nutrition Database' API and a template for the information to go here-->
+				</div>
+
+		</div>
 </body>
 
 </html>

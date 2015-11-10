@@ -4,88 +4,101 @@ html,body {
     width: 100%;
     margin: 0%;
     padding: 0;
-	background-color: darkgreen;
 	overflow-y: auto;
+	box-shadow: inset 0 0 10em 2.5em #1C4B16;
+	background-image: url("filesImages/foliagebg.jpg");
 }
 
 /*PROPERTY OUTLINES*/
 *{
-    outline: 1px solid deeppink;	
+    outline: 1px solid white;	
 }
+
+
 
 /*MENU*/
 .menu {
-	color: darkgreen;
-	font-size: 12px;
-	Height: 12px;
+	outline: 1px solid orange;	
+	box-shadow: inset 0 0 10em 2.5em whitesmoke;
+	opacity: .5;
+	font-size: 15px;
+	Height: 30px;
 }
+
+a href {
+	
+}
+
+
 
 /*HEADER*/
-header {
-	color: whitesmoke;
-	font-size: 25px;
-  	text-align: center;
-	padding: 2.5%;	
+.header {
+	outline: 1px solid yellow;
+	font-stretch: 50%;	
+	color: #1C4B16;
+	opacity: .5;
+	font-size: 50px;
+  	text-align: center;	
+	padding: 1%;
 }
 
-/*MISSION*/
-.mission {
-	color: lightgreen;
-	font-size: 20px;
-  	text-align: center;
-	padding: 2.5%;
-}
+
 
 /*NUTRITION BASICS*/
 .basics {
-	background-color: darkgreen;
-	color: lightgreen;
-    outline: 1px solid green;	
+	outline: 1px solid red;	
+	color: whitesmoke;
+	opacity: .75;
 	font-size: 30px;
-  	text-align: center;
-	margin: 5% 0 5% 21.5%;
-	padding: 1%;	
-	float: left;
-}
-
-.nutritionSub-Categories {
-	color: lightgreen;	
   	text-align: center;
 	padding: 1%;
-	margin: 0 10%;
-		
+	margin: 5% 0;	
 }
+
 .macro {
-	background-color: darkgreen;
-	color: lightgreen;
-    outline: 1px solid green;	
+	color: whitesmoke;
+	opacity: .75;
 	font-size: 30px;
   	text-align: center;
-	margin: 5% 0 5% 21.5%;
 	padding: 1%;	
-	float: left;
 }
 
 .micro {
-	background-color: darkgreen;
-	color: lightgreen;
-    outline: 1px solid green;	
+	color: whitesmoke;
+	opacity: .75;
 	font-size: 30px;
   	text-align: center;
-	margin: 5% 21.5% 5% 0;
 	padding: 1%;	
-	float: right;
 }
+
+.nutritionSub-Categories {
+	color: #1C4B16;
+	opacity: .80;
+  	text-align: center;
+	padding: 1%;
+	margin: 5% 5%;
+}
+
+
+
 
 /*NUTRITION FACTS*/
 .facts {
-	background-color: darkgreen;
-	color: lightgreen;
-    outline: 1px solid green;
-	
+	outline: 1px solid darkblue;	
+	color: whitesmoke;
+	opacity: .75;
 	font-size: 30px;
   	text-align: center;
-	margin: 5% 21.5% 5% 0;
 	padding: 1%;	
-	float: right;
+}
+
+/*FOOTER*/
+.footer {
+	outline: 1px solid deeppink;	
+	color: #1C4B16;	
+	opacity: .75;
+	font-size: 20px;
+  	text-align: center;
+	margin: 5% 0;
+	padding: 0 5%;
 }

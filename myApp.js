@@ -9,6 +9,8 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             controller: 'mainCtrl'
         })
 
+/* THIS IS THE SECTION TO RETRIEVE THE NUTRITION BASICS SECTION OF MYAPP*/ 
+
         .state('basics', {
             url: '/basics',
             templateUrl: 'jsBasics/basicsTmpl.html',
@@ -16,8 +18,36 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         })
         .state('macros', {
             url: '/basics/:macronutrients',
-            templateUrl: '/jsBasics/macrosTmpl.html',
-            controller: 'macrosCtrl',
+            templateUrl: '/jsBasics/macMicTmpl.html',
+            controller: 'macMicCtrl',
+            resolve: {
+                resolvedData: function (mainService, $stateParams) {
+                    return mainService.getData($stateParams.macronutrients)
+                }
+            }
+        })
+        .state('micros', {
+            url: '/basics/:micronutrients',
+            templateUrl: '/jsBasics/macMicTmpl.html',
+            controller: 'micMicCtrl',
+            resolve: {
+                resolvedData: function (mainService, $stateParams) {
+                    return mainService.getData($stateParams.micronutrients)
+                }
+            }
+        })
+        
+/* THIS IS THE SECTION TO RETRIEVE THE NUTRITIONAL FACTS SECTION OF MYAPP*/  
+
+        .state('facts', {
+            url: '/facts',
+            templateUrl: '/jsFacts/factsTmpl.html',
+            controller: 'factsCtrl',
+        })
+        .state('factsInquiry', {
+            url: '/facts/:orgFacts',
+            templateUrl: 'jsFacts/orgFactsTmpl.html',
+            controller: 'orgFactsCtrl',
             resolve: {
                 resolvedData: function (mainService, $stateParams) {
                     return mainService.getData($stateParams.macronutrients)
@@ -25,41 +55,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
 
-
-
-
-
-
-    // .state('proteins', {
-    //     url: '/basics/:proteins',
-    //     templateUrl: 'jsBasics/basics/basicsTmpl.html',
-    //     controller: 'basicsCtrl',
-    //     resolve: {
-    //        myData: function (mainService, $stateParams) {
-    //             return mainService.getbasicsData($stateParams.basics)
-    //         }
-    //     }
-    // })
-    // .state('carbohydrates', {
-    //     url: '/basics/:carbohydrates',
-    //     templateUrl: 'jsBasics/basics/basicsTmpl.html',
-    //     controller: 'basicsCtrl',
-    //     resolve: {
-    //         teamData: function (mainService, $stateParams) {
-    //             return mainService.getbasicsData($stateParams.basics)
-    //         }
-    //     }
-    // })
-    // .state('lipids', {
-    //     url: '/basics/:lipids',
-    //     templateUrl: 'jsBasics/basics/basicsTmpl.html',
-    //     controller: 'basicsCtrl',
-    //     resolve: {
-    //         teamData: function (mainService, $stateParams) {
-    //             return mainService.getbasicsData($stateParams.basics)
-    //         }
-    //     }
-    // })
+/*HERE IS WHERE WE ROUTE MYAPP */
 
     $urlRouterProvider
         .otherwise('/');

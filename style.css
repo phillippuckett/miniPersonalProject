@@ -1,104 +1,287 @@
 html,body {
-	font-family: 'Walter Turncoat', cursive;
+	font-family: 'Shojumaru', cursive;
     height: 100%;
     width: 100%;
     margin: 0%;
     padding: 0;
 	overflow-y: auto;
-	box-shadow: inset 0 0 10em 2.5em #1C4B16;
+	box-shadow: inset 0 0 10em 5em #083600;
 	background-image: url("filesImages/foliagebg.jpg");
 }
 
 /*PROPERTY OUTLINES*/
-*{
+/**{
     outline: 1px solid white;	
-}
-
-
+}*/
 
 /*MENU*/
-.menu {
-	outline: 1px solid orange;	
-	box-shadow: inset 0 0 10em 2.5em whitesmoke;
+.menu {	
+	box-shadow: inset 0 0 2em .2em lightgoldenrodyellow;
+	text-align: center;
 	opacity: .5;
-	font-size: 15px;
-	Height: 30px;
+	font-size: 20px;
+	height: 30px;
+	padding: 0 1%
 }
+	.menu a {
+		color:#083600; 
+		text-decoration: none;
+		float:left;
+	}
+	.menu a:hover{
+		text-decoration: none;
+		-webkit-stroke-width: 6px;
+	    -webkit-stroke-color: #083600;
+	    -webkit-fill-color: #083600;
+	    text-shadow: 0 0 15px #083600;
+	}	
+#tfnewsearch {
+}			
+.tftextinput {
+	font-family: 'Shojumaru';
+	font-size: 12px;
+	border: 1px solid lightgoldenrodyellow;
+	border-radius: 5px;
+	padding: 5px 15px;
+	margin: .25% 0 5% .5%;
+	float: right;
+}			
+		.tfbutton {
+			font-family: 'Shojumaru', cursive;
+			font-size: 20px;
+			opacity: .75;
+			background: none;
+			border: none;
+			padding: 0;
+			float: right;
+		}			
+		.tfbutton::-moz-focus-inner {
+			border: 0;
+		}	
+		.tfbutton:hover{
+			text-decoration: none;
+			-webkit-stroke-width: 6px;
+		    -webkit-stroke-color: #083600;
+		    -webkit-fill-color: #083600;
+		    text-shadow: 0 0 15px #083600;
+		}				
+		.tfclear {
+			clear: both;
+		}
 
-a href {
-	
-}
 
 
 
 /*HEADER*/
 .header {
-	outline: 1px solid yellow;
 	font-stretch: 50%;	
-	color: #1C4B16;
+	color: lightgoldenrodyellow;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
 	opacity: .5;
-	font-size: 50px;
+	font-size: 500%;
   	text-align: center;	
-	padding: 1%;
 }
+		.header a {
+			color: #083600;
+			text-decoration: none;
+			text-shadow: 0 0 15px #083600;
+		}
+		.header a:hover{
+			color: #083600;
+			text-decoration: none;
+			-webkit-stroke-width: 6px;
+    		-webkit-stroke-color: lightgoldenrodyellow;
+    		-webkit-fill-color: lightgoldenrodyellow;
+   			text-shadow: 0 0 15px lightgoldenrodyellow;	
+}
+/*MISSION*/
+.mission {
+	/*outline: 1px solid deeppink;	*/
+	color: #083600;	
+   	text-shadow: 0 0 15px lightgoldenrodyellow;	
+	opacity: .75;
+	font-size: 25px;
+  	text-align: center;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 5% 0;
+	padding: 0 5%;
+}
+
+
+
+
+
+
+
+
 
 
 
 /*NUTRITION BASICS*/
 .basics {
-	outline: 1px solid red;	
-	color: whitesmoke;
+	/*outline: 1px solid red;*/
+	text-size: 35px;
+	color: lightgoldenrodyellow;;
+	text-shadow: 0 0 15px #083600;
 	opacity: .75;
-	font-size: 30px;
+	font-size: 35px;
   	text-align: center;
-	padding: 1%;
-	margin: 5% 0;	
+	margin: 5% 0% 0% 20%;	
+	float: left;
+}
+.basics:hover{
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: white;
+    -webkit-fill-color: white;
+    text-shadow: 0 0 15px white;
 }
 
-.macro {
-	color: whitesmoke;
-	opacity: .75;
-	font-size: 30px;
-  	text-align: center;
-	padding: 1%;	
-}
-
-.micro {
-	color: whitesmoke;
-	opacity: .75;
-	font-size: 30px;
-  	text-align: center;
-	padding: 1%;	
-}
-
+/*NUTRIENT SUB-CATEGORIES*/
 .nutritionSub-Categories {
-	color: #1C4B16;
-	opacity: .80;
+	color: #083600;
+	opacity: .90;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
+	font-size: 25px;
   	text-align: center;
-	padding: 1%;
-	margin: 5% 5%;
+	margin: 0 5%;
 }
+.nutritionSub-Categories p {
+	color: #083600;
+	opacity: .90;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
+	font-size: 25px;
+  	text-align: center;
+}
+.Macro-Nutrients {
+	/*outline: 1px solid red;*/
+	color: lightgoldenrodyellow;
+	opacity: .90;
+	text-shadow: 0 0 15px #083600;
+	font-size: 30px;
+  	text-align: center;
+	margin: 0 0 0 20%;
+	float: left;
+}
+.Micro-Nutrients {
+	/*outline: 1px solid red;*/
+	color: lightgoldenrodyellow;
+	opacity: .90;
+	text-shadow: 0 0 15px #083600;
+	font-size: 30px;
+  	text-align: center;
+	margin: 0 20% 0 0;
+	float: right;
+}	
+.Macro-Nutrients a:hover {
+		/*text-shadow: 0 0 20px lightgoldenrodyellow;*/
+		text-decoration: none;
+		font-size:30px;
+}	
+.Micro-Nutrients a:hover {
+		/*text-shadow: 0 0 20px lightgoldenrodyellow;*/
+		text-decoration: none;
+		font-size:30px;
+}	
+.Macro-Nutrients a {
+	/*outline: 1px solid saddlebrown;*/
+	color: #083600;
+	text-shadow: 0 0 15px  lightgoldenrodyellow;
+	font-size: 25px;
+	text-decoration: none;
+}
+.Micro-Nutrients a {
+	/*outline: 1px solid saddlebrown;*/
+	color: #083600;
+	text-shadow: 0 0 15px  lightgoldenrodyellow;
+	font-size: 25px;
+	text-decoration: none;
+}	
+.Macro-Nutrients:hover{
+	/*outline: 1px solid saddlebrown;*/
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: #083600;
+    -webkit-fill-color: #083600;
+    text-shadow: 0 0 15px  #083600;
+}
+.Micro-Nutrients:hover{
+	/*outline: 1px solid saddlebrown;*/
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: #083600;
+    -webkit-fill-color: #083600;
+    text-shadow: 0 0 15px  #083600;
+}
+
+
+
 
 
 
 
 /*NUTRITION FACTS*/
 .facts {
-	outline: 1px solid darkblue;	
-	color: whitesmoke;
+	/*outline: 1px solid darkblue;	*/
+	text-size: 35px;
+	color: lightgoldenrodyellow;
+	text-shadow: 0 0 15px #083600;
 	opacity: .75;
-	font-size: 30px;
+	font-size: 35px;
   	text-align: center;
-	padding: 1%;	
+	margin: 5% 20% 0% 0%;
+	padding: 0 5%;
+	float: right;	
+}
+.facts:hover{
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: white;
+    -webkit-fill-color: white;
+    text-shadow: 0 0 15px white;
+}
+.nutritional-facts {
+	/*outline: 1px solid red;*/
+	color: #083600;
+	opacity: .90;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
+	font-size: 25px;
+  	text-align: center;
+	margin: 0 5%;
+}
+.nutritional-facts p {
+	/*outline: 1px solid red;*/
+	opacity: .90;
+	font-size: 25px;
+  	text-align: center;
 }
 
-/*FOOTER*/
-.footer {
-	outline: 1px solid deeppink;	
-	color: #1C4B16;	
-	opacity: .75;
-	font-size: 20px;
-  	text-align: center;
-	margin: 5% 0;
-	padding: 0 5%;
+.the-footer {
+	/*outline: 1px solid red;*/
+	color: lightgoldenrodyellow;
+	/*text-align: center;*/
+	position: fixed; 
+	bottom: 0;
+	width: 100%;
+	padding: 1%;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
 }
+
+/*AN EXAMPLE OF HOVER TEXT, FOR TIPS, ETC*/
+	/*.hovertext {
+		outline: 1px solid white;
+		box-shadow: inset 0 0 10em 5em #1C4B16;
+		padding: .25% .75%;
+		font-size: 20px;
+		text-align: center;
+		position: absolute;
+		text-shadow: 5px 5px 20px #1C4B16;
+		display: none;
+	}
+	
+	.Micro-Nutrients:hover .hovertext2{
+		display: block;
+	}

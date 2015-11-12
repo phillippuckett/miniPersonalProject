@@ -5,31 +5,48 @@
 	<link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
-	<title>UnderstandingTheFoodsYouEat</title>
+	<title>SimpleNutrition</title>
 </head>
 
 <body>
 	<div class="main-container">
 		<div class="header">
-			Simplistic Nutrition
-		</div>	
+			<a href="/#/">Simple Nutrition</a>
+		</div>
+
+		<!--NAVIGATION BAR-->
 		<nav class="menu">
-					<a href="/#/">Main </a>
-					<a href="breaker"> | </a>
-					<a href="/#/">Search</a>
+			<a href="/#/">Previous Page</a>
+			<!--<style type="text/css">
+			</style>-->
+			<!-- HTML for SEARCH BAR -->
+				<form id="tfnewsearch" method="get" action="http://www.google.com">
+					<input type="text" class="tftextinput" name="q" size="21" maxlength="120">
+					<input type="submit" value="Search" class="tfbutton">
+				</form>
+				<div class="tfclear"></div>
 		</nav>
-				
+
+		<!--UI ROUTER VIEW-->
 		<div ui-view></div>
-	</div>	
-		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
-		<script src="/myApp.js"></script>
-		<script src="/jsMain/mainCtrl.js"></script>
-		<script src="/jsBasics/macrosCtrl.js"></script>
-		<script src="/jsMain/mainService.js"></script>
-		<script src="/jsBasics/basicsCtrl.js"></script>
-		<script src="/jsFacts/factsCtrl.js"></script>
+	</div>
+	
+	<div class="the-footer">
+		CopyRight <dir-display></dir-display>
+	</div>
+	
+<!--SCRIPT SOURCES-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script src="/myApp.js"></script>
+	<script src="/jsMain/mainCtrl.js"></script>
+	<script src="/jsBasics/macMicCtrl.js"></script>
+	<script src="/jsMain/mainService.js"></script>
+	<script src="/jsBasics/basicsCtrl.js"></script>
+	<script src="/jsFacts/factsCtrl.js"></script>
+	<script src="/jsFacts/orgFactsCtrl.js"></script>
+  	<script src="/filesDirective/dirDisplay.js"></script>
+	<!--<script src="/filesDirective/prevPageDisplay.js"></script>-->
 
 </body>
 

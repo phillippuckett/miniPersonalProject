@@ -16,26 +16,40 @@
 
 		<!--NAVIGATION BAR-->
 		<nav class="menu">
-			<a href="/#/">Previous Page</a>
-			<!--<style type="text/css">
-			</style>-->
-			<!-- HTML for SEARCH BAR -->
-				<form id="tfnewsearch" method="get" action="http://www.google.com">
-					<input type="text" class="tftextinput" name="q" size="21" maxlength="120">
-					<input type="submit" value="Search" class="tfbutton">
-				</form>
-				<div class="tfclear"></div>
+			<a href="/previous">Previous</a>
+			<a>|</a>
+
+			<!--LOGIN BAR-->
+			<a href="/login" ng-click>Login</a>
+			<div ng-app="myApp" class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="well">
+							<login-form></login-form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a>|</a>
+
+			<!--SEARCH BAR-->
+			<form id="searchNewSearch" method="get" action="http://www.google.com/?q=site:URLSITE%s">
+				<input type="text" class="searchTextInput" name="q" size="21" maxlength="120">
+				<input type="submit" value="Search" class="searchButton">
+			</form>
+			<div class="searchClear"></div>
 		</nav>
 
 		<!--UI ROUTER VIEW-->
 		<div ui-view></div>
 	</div>
-	
+
 	<div class="the-footer">
-		CopyRight <dir-display></dir-display>
+		CopyRight
+		<dir-display></dir-display>
 	</div>
-	
-<!--SCRIPT SOURCES-->
+
+	<!--SCRIPT SOURCES-->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
 	<script src="/myApp.js"></script>
@@ -45,8 +59,8 @@
 	<script src="/jsBasics/basicsCtrl.js"></script>
 	<script src="/jsFacts/factsCtrl.js"></script>
 	<script src="/jsFacts/orgFactsCtrl.js"></script>
-  	<script src="/filesDirective/dirDisplay.js"></script>
-	<!--<script src="/filesDirective/prevPageDisplay.js"></script>-->
+	<script src="/filesDirective/dirDisplay.js"></script>
+	<script src="/filesDirective/loginDisplay.js"></script>
 
 </body>
 

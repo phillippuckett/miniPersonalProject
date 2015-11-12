@@ -24,9 +24,11 @@ html,body {
 	padding: 0 1%
 }
 	.menu a {
+		/*outline: 1px solid deeppink;	*/
 		color:#083600; 
 		text-decoration: none;
 		float:left;
+		margin: 0 1%;
 	}
 	.menu a:hover{
 		text-decoration: none;
@@ -35,9 +37,14 @@ html,body {
 	    -webkit-fill-color: #083600;
 	    text-shadow: 0 0 15px #083600;
 	}	
-#tfnewsearch {
+	
+.login {
+	  transition: all 0.75s ease;
+}
+
+#searchNewSearch {
 }			
-.tftextinput {
+.searchTextInput {
 	font-family: 'Shojumaru';
 	font-size: 12px;
 	border: 1px solid lightgoldenrodyellow;
@@ -46,7 +53,7 @@ html,body {
 	margin: .25% 0 5% .5%;
 	float: right;
 }			
-		.tfbutton {
+		.searchButton {
 			font-family: 'Shojumaru', cursive;
 			font-size: 20px;
 			opacity: .75;
@@ -55,17 +62,17 @@ html,body {
 			padding: 0;
 			float: right;
 		}			
-		.tfbutton::-moz-focus-inner {
+		.searchButton::-moz-focus-inner {
 			border: 0;
 		}	
-		.tfbutton:hover{
+		.searchButton:hover{
 			text-decoration: none;
 			-webkit-stroke-width: 6px;
 		    -webkit-stroke-color: #083600;
 		    -webkit-fill-color: #083600;
 		    text-shadow: 0 0 15px #083600;
 		}				
-		.tfclear {
+		.searchClear {
 			clear: both;
 		}
 

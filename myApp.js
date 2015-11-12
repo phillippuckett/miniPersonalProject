@@ -55,6 +55,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
 
+/* THIS IS THE SECTION TO CONNECT THE LOGIN TO THE LOGIN CODE */
+ 
+        .state('login', {
+            url: '/login',
+            templateUrl: '/filesDirective/loginDispTmpl.html',
+        })
+
 /*HERE IS WHERE WE ROUTE MYAPP */
 
     $urlRouterProvider

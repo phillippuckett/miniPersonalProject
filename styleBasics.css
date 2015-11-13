@@ -1,0 +1,113 @@
+html,body {
+	font-family: 'Shojumaru', cursive;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+	overflow-y: auto;
+	box-shadow: inset 0 0 10em 5em #083600;
+	background-image: url("/filesImages/foliagebg.jpg");
+}
+
+/*--------------------------------------NUTRITION BASICS*/
+.basics {
+	/*outline: 1px solid red;*/
+	text-size: 35px;
+	color: lightgoldenrodyellow;;
+	text-shadow: 0 0 15px #083600;
+	opacity: .75;
+	font-size: 35px;
+  	text-align: center;
+	margin: 5% 0% 0% 20%;	
+	float: left;
+}
+.basics:hover{
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: white;
+    -webkit-fill-color: white;
+    text-shadow: 0 0 15px white;
+}
+
+/*--------------------------------------NUTRIENT SUB-CATEGORIES*/
+.nutritionSub-Categories {
+	color: #083600;
+	opacity: .90;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
+	font-size: 25px;
+  	text-align: center;
+	margin: 0 5%;
+}
+.nutritionSub-Categories p {
+	color: #083600;
+	opacity: .90;
+	text-shadow: 0 0 15px lightgoldenrodyellow;
+	font-size: 25px;
+  	text-align: center;
+}
+
+
+
+
+
+/*--------------------------------------MACROS AND MICROS*/
+.Macro-Nutrients {
+	/*outline: 1px solid red;*/
+	color: lightgoldenrodyellow;
+	opacity: .90;
+	text-shadow: 0 0 15px #083600;
+	font-size: 30px;
+  	text-align: center;
+	margin: 0 0 0 20%;
+	float: left;
+}
+.Micro-Nutrients {
+	/*outline: 1px solid red;*/
+	color: lightgoldenrodyellow;
+	opacity: .90;
+	text-shadow: 0 0 15px #083600;
+	font-size: 30px;
+  	text-align: center;
+	margin: 0 20% 0 0;
+	float: right;
+}	
+.Macro-Nutrients a:hover {
+		/*text-shadow: 0 0 20px lightgoldenrodyellow;*/
+		text-decoration: none;
+		font-size:30px;
+}	
+.Micro-Nutrients a:hover {
+		/*text-shadow: 0 0 20px lightgoldenrodyellow;*/
+		text-decoration: none;
+		font-size:30px;
+}	
+.Macro-Nutrients a {
+	/*outline: 1px solid saddlebrown;*/
+	color: #083600;
+	text-shadow: 0 0 15px  lightgoldenrodyellow;
+	font-size: 25px;
+	text-decoration: none;
+}
+.Micro-Nutrients a {
+	/*outline: 1px solid saddlebrown;*/
+	color: #083600;
+	text-shadow: 0 0 15px  lightgoldenrodyellow;
+	font-size: 25px;
+	text-decoration: none;
+}	
+.Macro-Nutrients:hover{
+	/*outline: 1px solid saddlebrown;*/
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: #083600;
+    -webkit-fill-color: #083600;
+    text-shadow: 0 0 15px  #083600;
+}
+.Micro-Nutrients:hover{
+	/*outline: 1px solid saddlebrown;*/
+	text-decoration: none;
+	-webkit-stroke-width: 6px;
+    -webkit-stroke-color: #083600;
+    -webkit-fill-color: #083600;
+    text-shadow: 0 0 15px  #083600;
+}

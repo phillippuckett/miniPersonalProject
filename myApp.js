@@ -61,6 +61,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             url: '/login',
             templateUrl: '/filesDirective/loginDispTmpl.html',
         })
+ 
 
 /*HERE IS WHERE WE ROUTE MYAPP */
 

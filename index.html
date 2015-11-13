@@ -2,7 +2,10 @@
 <html lang="en" ng-app="myApp">
 
 <head>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="/styleMain.css">
+	<link rel="stylesheet" href="/styleBasics.css">
+	<link rel="stylesheet" href="/styleFacts.css">
+	<link rel="stylesheet" href="/styleMenu.css">
 	<link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>SimpleNutrition</title>
@@ -20,16 +23,8 @@
 			<a>|</a>
 
 			<!--LOGIN BAR-->
-			<a href="/login" ng-click>Login</a>
-			<div ng-app="myApp" class="container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="well">
-							<login-form></login-form>
-						</div>
-					</div>
-				</div>
-			</div>
+			<a href="/#/login" ng-click>Login</a>
+			<login-display></login-display>
 			<a>|</a>
 
 			<!--SEARCH BAR-->

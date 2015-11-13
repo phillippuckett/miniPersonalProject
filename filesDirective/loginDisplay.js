@@ -3,7 +3,6 @@ angular.module('myApp').directive("loginDisplay", [function () {
         restrict: 'E',
         scope: {},
         templateUrl: '/filesDirective/loginTmpl.html',
-        replace: 'true',
         controller: ['$scope', '$http', '$window', function($scope, $http, $window) {
             $scope.loginError = false;
             $scope.login = function () {
